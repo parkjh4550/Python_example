@@ -37,6 +37,17 @@ def sum_all_both(*args, **kwargs):
 
     return result, names
 
+class mySum(object):
+    def __init__(self, *args, **kwargs):
+        result = 0
+        if args:
+            for i in args:
+                result+=i
+        if kwargs:
+            for k, v in kwargs.items():
+                result+=v
+        print('class constructor result : ', result)
+
 if __name__ == '__main__':
     numbers = [1,2,3,4]
     print(sum_numbers(numbers[0], numbers[1]))
@@ -44,3 +55,5 @@ if __name__ == '__main__':
     print(sum_all_with_name(one=numbers[0], two=numbers[1], three=numbers[2], four=numbers[3]))
     # *args must come first
     print(sum_all_both(numbers[0], numbers[1], three=numbers[2], four=numbers[3]))
+
+    c = mySum(numbers[0], numbers[1], three=numbers[2], four=numbers[3])
