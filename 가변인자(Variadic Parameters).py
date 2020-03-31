@@ -42,4 +42,5 @@ if __name__ == '__main__':
     print(sum_numbers(numbers[0], numbers[1]))
     print(sum_all(numbers[0], numbers[1], numbers[2], numbers[3]))
     print(sum_all_with_name(one=numbers[0], two=numbers[1], three=numbers[2], four=numbers[3]))
+    # *args must come first
     print(sum_all_both(numbers[0], numbers[1], three=numbers[2], four=numbers[3]))
