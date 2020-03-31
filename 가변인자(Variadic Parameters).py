@@ -4,7 +4,7 @@ def sum_numbers(n1, n2):
     return result
 
 def sum_all(*args):
-    # *args : list
+    # *args : tuple
     result = 0
     for i in args:
         result += i
