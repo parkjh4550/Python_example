@@ -38,6 +38,7 @@ def sum_all_both(*args, **kwargs):
     return result, names
 
 class mySum(object):
+    # class constructor overloading
     def __init__(self, *args, **kwargs):
         result = 0
         if args:
